@@ -1,24 +1,27 @@
-import java.util.*;
 
-public class node {
+public class nodeWithCount {
 	        // reference to the next node in the chain,
 	        // or null if there isn't one.
 	        node next;
 	        // data carried by this node.
 	        // could be of any type you need.
-	        int data;	      
+	        int data;	
+	        // set a counter for each node
+	        int counter;
 	 
 	        // Node constructor
-	        public node(int dataValue) {
+	        public nodeWithCount(int dataValue) {
 	            next = null;
 	            data = dataValue;
+	            counter = 0;
 	        }
 	 
 	        // another Node constructor if we want to
 	        // specify the node to point to.
-	        public node(int dataValue, node nextValue) {
+	        public nodeWithCount(int dataValue, node nextValue) {
 	            next = nextValue;
 	            data = dataValue;
+	            counter = 0;
 	        }
 	 
 	        // these methods should be self-explanatory
@@ -37,9 +40,5 @@ public class node {
 	        public void setNext(node nextValue) {
 	            next = nextValue;
 	        }
-	        
-	        public String toString(){
-	    		return data + " ";
-	    	}
 	        
 	    }

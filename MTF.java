@@ -2,6 +2,7 @@ public class MTF {
 	public static node head;
 
 	public static void main(String[] args) {
+
 		head = new node(0, null);
 		// create a single node linked list with node from 0 to 9 as our initial
 		// list
@@ -17,6 +18,7 @@ public class MTF {
 			System.out.println("Value to move to front: " + value);
 			MoveToFront(value);
 			printNodes();
+
 		}
 	}
 
