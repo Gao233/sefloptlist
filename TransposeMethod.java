@@ -13,7 +13,7 @@ public class TransposeMethod {
 
 		System.out.println("Initial dataset:");
 		printNodes();
-		String s = "009876543210";
+		String s = "009988877776666555554444444";
 		for (int i = 0; i < s.length(); i++) {
 			int value = Character.getNumericValue(s.charAt(i));
 			System.out.println("Value to move: " + value);
@@ -28,7 +28,7 @@ public class TransposeMethod {
 		while (x.next.data != input) {
 			x = x.next;
 		}
-		if(x == head.next){
+		if(x == head){
 			return;
 		}else{
 			int tempValue = x.data;
