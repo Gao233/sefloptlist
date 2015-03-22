@@ -37,4 +37,5 @@ public class node {
 	        public void setNext(node nextValue) {
 	            next = nextValue;
 	        }
+	        
 	    }
