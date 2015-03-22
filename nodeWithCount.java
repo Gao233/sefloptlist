@@ -2,7 +2,7 @@
 public class nodeWithCount {
 	        // reference to the next node in the chain,
 	        // or null if there isn't one.
-	        node next;
+	        nodeWithCount next;
 	        // data carried by this node.
 	        // could be of any type you need.
 	        int data;	
@@ -10,15 +10,7 @@ public class nodeWithCount {
 	        int counter;
 	 
 	        // Node constructor
-	        public nodeWithCount(int dataValue) {
-	            next = null;
-	            data = dataValue;
-	            counter = 0;
-	        }
-	 
-	        // another Node constructor if we want to
-	        // specify the node to point to.
-	        public nodeWithCount(int dataValue, node nextValue) {
+	        public nodeWithCount(int dataValue, nodeWithCount nextValue) {
 	            next = nextValue;
 	            data = dataValue;
 	            counter = 0;
@@ -29,7 +21,6 @@ public class nodeWithCount {
 	        }
 	        
 	        public int increCounter(){
-	        	
 	        	return counter++;
 	        }
 	        // these methods should be self-explanatory
@@ -41,12 +32,15 @@ public class nodeWithCount {
 	            data = dataValue;
 	        }
 	 
-	        public node getNext() {
+	        public nodeWithCount getNext() {
 	            return next;
 	        }
 	 
-	        public void setNext(node nextValue) {
+	        public void setNext(nodeWithCount nextValue) {
 	            next = nextValue;
 	        }
 	        
+	        public String toString(){
+	    		return data + "(" + counter +") ";
+	    	}
 	    }

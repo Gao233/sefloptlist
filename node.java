@@ -1,4 +1,3 @@
-import java.util.*;
 
 public class node {
 	        // reference to the next node in the chain,
