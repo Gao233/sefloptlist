@@ -38,4 +38,8 @@ public class node {
 	            next = nextValue;
 	        }
 	        
+	        public String toString(){
+	    		return data + " ";
+	    	}
+	        
 	    }
