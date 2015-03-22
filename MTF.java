@@ -1,19 +1,19 @@
 public class MTF {
-	public static Node head;
+	public static node head;
 
 	public static void main(String[] args) {
 		head = null;
 		//create a single node linked list with node from 0 to 9 as our initial list 
-		head.next = new Node(0, new Node(1, new Node(2, new Node(3, new Node(4,
-			new Node(5, new Node(6, new Node(7, new Node(8, new Node(9,null))))))))));
+		head = new node(0, new node(1, new node(2, new node(3, new node(4,
+			new node(5, new node(6, new node(7, new node(8, new node(9,null))))))))));
 		
-		for (Node x = head; x != null; x = x.next) {
+		for (node x = head; x != null; x = x.next) {
 			System.out.print(x);
 		}
 	}
 
 	/*private void MoveToFront(int data) {
-		Node x = head;
+		node x = head;
 		while (x.data != data) {
 			x = x.next;
 		}
