@@ -6,27 +6,27 @@ public class node {
 	        node next;
 	        // data carried by this node.
 	        // could be of any type you need.
-	        Object data;
+	        int data;
 	 
 	        // Node constructor
-	        public node(Object dataValue) {
+	        public node(int dataValue) {
 	            next = null;
 	            data = dataValue;
 	        }
 	 
 	        // another Node constructor if we want to
 	        // specify the node to point to.
-	        public node(Object dataValue, node nextValue) {
+	        public node(int dataValue, node nextValue) {
 	            next = nextValue;
 	            data = dataValue;
 	        }
 	 
 	        // these methods should be self-explanatory
-	        public Object getData() {
+	        public int getData() {
 	            return data;
 	        }
 	 
-	        public void setData(Object dataValue) {
+	        public void setData(int dataValue) {
 	            data = dataValue;
 	        }
 	 
