@@ -46,16 +46,7 @@ public class CountMethod {
 			x.next = tempNode2.next;
 			tempNode2.next = tempNode.next;
 			tempNode.next = tempNode2;
-			/*x.next.counter++;
-			if (x.next.counter > x.counter){
-				int tempValue = x.data;
-				int tempCounter = x.counter;
-				x.data = x.next.data;
-				x.counter = x.next.counter;
-				x.next.data = tempValue;
-				x.next.counter = tempCounter;
-				
-			}*/			
+					
 		}
 	}
 	
