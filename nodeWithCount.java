@@ -23,7 +23,15 @@ public class nodeWithCount {
 	            data = dataValue;
 	            counter = 0;
 	        }
-	 
+	        
+	        public int getCounter(){
+	        	return counter;
+	        }
+	        
+	        public int increCounter(){
+	        	
+	        	return counter++;
+	        }
 	        // these methods should be self-explanatory
 	        public int getData() {
 	            return data;
