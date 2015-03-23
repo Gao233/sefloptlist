@@ -4,7 +4,7 @@ public class MTF {
 	public static void main(String[] args) {
 
 		head = new node(0, null);
-		double[] prob1 = {0, 0.3, 0.3, 0.4};
+		double[] prob1 = {0, 0.25, 0.3, 0.45};
 		double[] prob2 = {0.05, 0.1, 0.1, 0.75 };
 		double[] prob3 = {0, 0.2, 0.4, 0.6};
 		// create a single node linked list with node from 0 to 9 as our initial
