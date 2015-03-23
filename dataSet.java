@@ -5,10 +5,12 @@ public class dataSet {
 	
 	double[] prob;
     int dataSize;
-    List<Integer> dataSet;
+ 
+    public static node dataSet;
     
     public dataSet(double[] prob){
-    	prob = this.prob; 	
+    	prob = this.prob; 
+    	dataSet = new node(0, null);
     }
     
     public int genSample(double[] prob){
@@ -28,19 +30,27 @@ public class dataSet {
     	return 0;
     }
     
-    public List<Integer> genSet(double[] prob){
+    public node genSet(double[] prob){
+    	
     	int n = 100000;
     	for(int i = 0; i < n; i++){
-    		dataSet.add(genSample(prob));
-    		System.out.print(dataSet.get(i));
+    		dataSet.next= new node(genSample(prob));
+    		
     	}
+    	
+    	printNodes();
     	
         return dataSet;	
     }
     	
     	
     	
-    	
+    private static void printNodes() {
+		for (node x = dataSet.next; x != null; x = x.next) {
+			System.out.print(x);
+		}
+		System.out.println();
+	}
     	
     	
     	

@@ -11,6 +11,10 @@ public class node {
 	            data = dataValue;
 	        }
 	        
+	        public node(int dataValue) {
+	            data = dataValue;
+	        }
+	        
 	        public String toString(){
 	    		return data + " ";
 	    	}

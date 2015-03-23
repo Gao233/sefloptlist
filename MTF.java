@@ -9,9 +9,9 @@ public class MTF {
 		double[] prob3 = {0, 0.2, 0.4, 0.6};
 		// create a single node linked list with node from 0 to 9 as our initial
 		// list
-		head.next = new node(0, new node(1, new node(2, new node(3, new node(4,
+		/*head.next = new node(0, new node(1, new node(2, new node(3, new node(4,
 				new node(5, new node(6, new node(7, new node(8, new node(9,
-						null))))))))));
+						null))))))))));*/
 
 		System.out.println("Firt 5 minutes dataset:");
 		dataSet data1 = new dataSet(prob1); 
