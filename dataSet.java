@@ -1,15 +1,17 @@
 import java.util.*;
+import java.lang.Math.*;
 
 public class dataSet {
-	int[] prob;
+	
+	double[] prob;
     int dataSize;
     List<Integer> dataSet;
     
-    public dataSet(int[] prob){
+    public dataSet(double[] prob){
     	prob = this.prob; 	
     }
     
-    public int genSample(int[] prob){
+    public int genSample(double[] prob){
       
     	double r = Math.random();
     	
@@ -26,11 +28,13 @@ public class dataSet {
     	return 0;
     }
     
-    public List<Integer> genSet(int[] prob, int n){
-    	
+    public List<Integer> genSet(double[] prob){
+    	int n = 100000;
     	for(int i = 0; i < n; i++){
     		dataSet.add(genSample(prob));
+    		System.out.print(dataSet.get(i));
     	}
+    	
         return dataSet;	
     }
     	
