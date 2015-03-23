@@ -32,10 +32,10 @@ public class dataSet {
     
     public node genSet(double[] prob){
     	
-    	int n = 100000;
+    	int n = 10;
+    	dataSet.next= new node(genSample(prob));
     	for(int i = 0; i < n; i++){
-    		dataSet.next= new node(genSample(prob));
-    		
+    		dataSet.next= new node(genSample(prob), dataSet);	
     	}
     	
     	printNodes();
