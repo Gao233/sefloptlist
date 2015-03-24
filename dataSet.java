@@ -32,9 +32,9 @@ public class dataSet {
     
     public node genSet(double[] prob){
     	
-    	int n = 10;
+    	int n = 10;// Dataset size
     	for(int i = 0; i < n; i++){
-    		dataSet.next= new node(genSample(prob));	
+    		dataSet.next= new node(genSample(prob));
     	}
     	
     	printNodes();
